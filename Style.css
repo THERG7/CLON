@@ -1,0 +1,456 @@
+.boxnav{
+    height: 100px;
+    width: 1350px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+/* Contenedor principal del ticker */
+.ticker {
+  width: 100%;
+  height: 60px;
+  padding-top: 7px;
+  overflow: hidden; 
+  background-color: red; 
+  white-space: nowrap;
+  position: relative; 
+}
+
+/* Contenedor del contenido del ticker */
+.ticker__content {
+  display: inline-block; 
+  animation: scroll-left 50s linear infinite; 
+}
+
+/* Cada ítem del ticker */
+.ticker__item {
+  display: inline-block; 
+  margin-right: 50px; 
+  font-size: 30px; 
+  font-weight: bold; 
+  color: rgb(0, 0, 0); 
+}
+.ticker__item::after {
+  content: '•'; 
+  color: rgb(0, 0, 0); 
+  font-size: 30px; 
+  margin-left: 20px;
+  position: absolute; 
+  top: 40%; 
+  transform: translateY(-50%); 
+}
+
+.ticker__button {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  padding: 5px; 
+}
+
+.ticker__button:hover{
+  background-color: rgba(128, 128, 128, 0.952);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-40%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.divimg{
+    background-color: rgba(194, 194, 194, 0.274);
+    margin: 50px;
+}
+.divid1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 60px;
+    
+}
+.box1{
+    text-align: left;
+    height: 350px;
+    width: 550px;
+    
+}
+h2{
+    text-decoration: dotted;
+}
+p{
+    padding-top: 10px;
+    font-size: large;
+}
+.divid2{
+    background-color: rgba(194, 194, 194, 0.274);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 80px;
+}
+.box2{
+    text-align: left;
+    height: 350px;
+    width: 550px;
+}
+.divimg2 {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: rgba(194, 194, 194, 0.274);
+}
+
+.divimg2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.Ver_mas{
+  border-radius: 50px;
+}
+.lh4{
+    font-size: 100%;
+    font-weight: normal;
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+.lh2{
+    font-weight: bolder;
+    color: black;
+    font-size: 230%;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.lh44{
+    font-size: 100%;
+    font-weight: normal;
+    padding-left: 50px;
+    text-align:left;
+}
+
+.box3 button {
+  position: absolute;
+  bottom: 50px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-60%);
+  padding: 10px 20px;
+  background-color: white;
+  border-color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box3 button:hover {
+    background-color:   rgba(172, 172, 172, 0.493);
+}
+.box3 {
+    position: absolute;
+    top: 15%; 
+    left: 50%; 
+    width: 40%; 
+    height: 70%;
+    padding: 15px;
+    background-color: rgb(255, 255, 255); 
+    z-index: 10; 
+    border-radius: 10px; 
+}
+.divb{
+    background-color: rgba(194, 194, 194, 0.274);
+    width: 100%;
+    height: 300px;  
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
+.redes{
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 40px;
+    padding-left: 90px;
+    border-radius: 20px;
+    width: 80%;
+    height: 140px;
+    margin: 80px;
+}
+  .foo1{
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    gap: 700px;              
+    padding: 20px;         
+    background-color: #000000; 
+    height: 155px;
+  }
+  
+  .divfo img{
+    max-width: 320px; 
+  }
+  
+  .divfo, .divfo1{
+    display: flex;       
+    align-items: center;  
+    justify-content: center; 
+    text-align: center; 
+  }
+  
+  .buarg{
+    height: 40px; width: 180px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: transparent;
+    color: white;          
+    font-size: 18px;       
+    cursor: pointer;       
+    display: flex;         
+    align-items: center;   
+  }
+  .fo2 {
+    display: flex;        
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;          
+    background-color: black;
+    color: white;           
+  }
+  
+.boxfo1{
+    flex: 1;              
+    margin: 0 60px;        
+}
+.boxfo2{
+  flex: 1;
+}
+.boxfo3{
+  flex: 1;
+}
+
+.boxfo4 {
+    flex: 1;
+    margin-left: 60px;      
+}
+
+  
+  ul {
+    list-style: none;      
+    padding: 0;             
+    margin: 0;             
+    
+  }
+  
+  ul li{
+    font-weight: bold;
+  }
+  
+  li a {
+    color: white;           
+    text-decoration: none;  
+    display: block;         
+    padding: 5px 0;         
+  }
+  
+  li a:hover {
+    text-decoration: underline; 
+  }
+  
+  .boxfo4 {
+    display: flex;          
+    justify-content: flex-end; 
+  }
+  
+  .social-icon {
+    margin: 0 5px;        
+    color: white;          
+    font-size: 24px;        
+    
+  }
+  #accs{
+    padding-top: 120px;
+    padding-right: 60px;
+    margin-right: auto;
+    
+  }
+  .fo3{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding-top: 40px;
+    padding-right: 100px;
+    font-size: smaller;
+    text-align: right;
+  }
+  .hrdiv{
+    height: 2px;
+    width: 50%;
+    border-top: 1px solid rgba(194, 194, 194, 0.274);
+    margin: 200px black;
+  }
+  #linea{
+    width: 50%;
+  }
+  @media (max-width: 1200px) {
+    .divid1, .divid2 {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        padding: 30px;
+    }
+
+    .boxfo4 {
+        justify-content: center; /* Centra los íconos sociales en pantallas más pequeñas */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divb {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .foo1, .fo2, .fo3 {
+        flex-direction: column; /* Cambia a columna para el footer */
+        gap: 20px;
+    }
+
+    .boxnav img {
+        width: 150px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .divimg, .divimg2 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes {
+        font-size: 18px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+        padding: 10px;
+    }
+
+    .box3 {
+        width: 90%; /* Ajusta el tamaño de la caja en pantallas muy pequeñas */
+    }
+
+    .divfo, .divfo1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxfo1, .boxfo2, .boxfo3 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 20px; /* Ajusta el tamaño de los íconos sociales */
+    }
+}
+  /* ACA AÑADO LO DE MEDIA QUERY*/
+
+  @media (max-width: 480px) {
+    .divfo, .divfo1 {
+        flex-direction: column;
+        align-items: center; /* Asegura que los elementos estén centrados */
+        text-align: center;
+    }
+
+    .boxfo1, .boxfo2, .boxfo3 {
+        margin: 10px 0;
+        text-align: center; /* Centra el texto */
+    }
+
+    .boxfo4 {
+        justify-content: center; /* Centra los íconos sociales */
+        padding: 20px 0;
+    }
+}
+  
+  @media (max-width: 1200px) {
+    .divid1, .divid2 {
+        flex-direction: column; 
+        padding: 30px;
+        align-items: center; /* Alinea los elementos al centro en pantallas más pequeñas */
+        text-align: center; /* Ajusta el texto al centro */
+    }
+}
+
+@media (max-width: 768px) {
+  .divb {
+      flex-direction: column; 
+      align-items: center; /* Asegura que los elementos estén centrados */
+  }
+  
+  .foo1, .fo2, .fo3 {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center; /* Mantiene los elementos alineados al centro */
+      text-align: center; /* Asegura que el texto esté centrado */
+  }
+  
+  .box1, .box2 {
+      width: 100%; /* Ajusta la anchura a 100% para pantallas pequeñas */
+      padding: 20px;
+      text-align: center; /* Centra el texto dentro de las cajas */
+  }
+  
+  .divimg, .divimg2 {
+      padding: 20px;
+      text-align: center; /* Centra el contenido de las imágenes */
+  }
+}
+@media (max-width: 480px) {
+  .box3 {
+      width: 90%; 
+      padding: 20px;
+      text-align: center; /* Asegura que el texto dentro de .box3 esté centrado */
+  }
+  
+  .ticker__button {
+      right: 5px; /* Ajusta la posición del botón en pantallas más pequeñas */
+  }
+
+  .lh4, .lh2, .lh44 {
+      padding-left: 20px; /* Ajusta el padding para pantallas pequeñas */
+      text-align: center; /* Centra el texto */
+  }
+}
+@media (max-width: 350px){
+  .Ver_mas{
+    width: auto;
+    align-self: center;
+  }
+}
+@media (max-width: 975px) {
+  .box3 h2, .box3 p, .box3 .lh4, .box3 .lh2, .box3 .lh44 {
+      display: none; /* Oculta el texto cuando la pantalla es menor que 700px */
+  }
+}
